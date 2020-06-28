@@ -1,0 +1,24 @@
+name: measure_overhead
+description: To measure the test framework overhead
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_driver: 
+    sdk: flutter
+  e2e: ">= 0.5.0+1"
+  pedantic: ^1.8.0
+
+flutter:
+  uses-material-design: true
