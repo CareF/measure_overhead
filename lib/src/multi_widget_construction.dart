@@ -72,21 +72,12 @@ class _MultiWidgetConstructTableState extends State<MultiWidgetConstructTable>
               widget.column,
               (int column) {
                 final int label = row * widget.column + column;
-                return counter % 2 == 0
-                    ? Container(
+                return Container(
                         // This key forces rebuilding the element
                         // key: ValueKey<int>(widgetCounter + label),
                         color: Color.lerp(
                             Colors.white, baseColor, label / totalLength),
-                        child: Text('${widgetCounter + label}'),
-                        constraints: BoxConstraints.expand(height: height),
-                      )
-                    : MyContainer(
-                        // This key forces rebuilding the element
-                        key: ValueKey<int>(widgetCounter + label),
-                        color: Color.lerp(
-                            Colors.white, baseColor, label / totalLength),
-                        child: Text('${widgetCounter + label}'),
+                        // child: Text('${widgetCounter + label}'),
                         constraints: BoxConstraints.expand(height: height),
                       );
               },
