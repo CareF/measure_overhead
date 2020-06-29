@@ -8,7 +8,7 @@ void main() {
     setUpAll(() async {
       driver = await FlutterDriver.connect();
       await driver.waitUntilFirstFrameRasterized();
-      await driver.setSemantics(true);
+      // await driver.setSemantics(true);
     });
 
     tearDownAll(() async {

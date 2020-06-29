@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:e2e/common.dart' as e2e;
 
 import 'package:flutter_driver/flutter_driver.dart';
-import 'package:e2e/e2e_driver.dart' as e2e;
 
 Future<void> main() async {
   const String testName = 'e2e_perf';
