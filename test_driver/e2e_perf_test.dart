@@ -21,8 +21,8 @@ Future<void> main() async {
   if (response.allTestsPassed) {
     print('All tests passed.');
     final TimelineSummary summary = TimelineSummary.summarize(timeline);
-    await summary.writeSummaryToFile(testName, pretty: true);
     await summary.writeTimelineToFile(testName, pretty: true);
+    await summary.writeSummaryToFile(testName, pretty: true);
     exit(0);
   } else {
     print('Failure Details:\n${response.formattedFailureDetails}');
